@@ -1,27 +1,41 @@
 <?php echo form_open($this->config->item('admin_folder').'/admin/form/'.$id); ?>
-	
-		<p><?php echo lang('firstname');?></p>
+			
 		<?php
 		$data	= array('name'=>'firstname', 'value'=>set_value('firstname', $firstname), 'class'=>'input-sm form-control');		
-		echo form_input($data);
+		if($this->auth->check_access('Admin')) : 
+			echo '<p>'. lang('firstname') .'</p>'.form_input($data);
+		else:
+			echo '<p>'.lang('firstname'). ' : ' .$firstname.'</p>';
+		endif;
 		?>
-		
-		<p><?php echo lang('lastname');?></p>
+				
 		<?php
 		$data	= array('name'=>'lastname', 'value'=>set_value('lastname', $lastname), 'class'=>'input-sm form-control');
-		echo form_input($data);
+		if($this->auth->check_access('Admin')) :
+			echo '<p>'. lang('lastname') .'</p>'.form_input($data);
+		else:
+			echo '<p>'.lang('lastname'). ' : ' .$lastname.'</p>';
+		endif;
+		
 		?>
-
-		<p><?php echo lang('username');?></p>
+	
 		<?php
 		$data	= array('name'=>'username', 'value'=>set_value('username', $username), 'class'=>'input-sm form-control');		
-		echo form_input($data);
+		if($this->auth->check_access('Admin')) :
+			echo '<p>'. lang('username') .'</p>'.form_input($data);
+		else:
+			echo '<p>'.lang('username'). ' : ' .$username.'</p>';
+		endif;
+		
 		?>
-
-		<p><?php echo lang('email');?></p>
+		
 		<?php
 		$data	= array('name'=>'email', 'value'=>set_value('email', $email), 'class'=>'input-sm form-control');
-		echo form_input($data);
+		if($this->auth->check_access('Admin')) :
+			echo '<p>'. lang('email') .'</p>'.form_input($data);
+		else:
+			echo '<p>'.lang('email'). ' : ' .$email.'</p>';
+		endif;
 		?>
 
 		<?php if($this->auth->check_access('Admin')) : ?>

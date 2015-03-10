@@ -71,12 +71,11 @@ class Admin extends Admin_Controller
 			$data['access']		= $admin->access;
 		}
 		
-		$this->form_validation->set_rules('firstname', 'lang:firstname', 'trim|max_length[32]');
-		$this->form_validation->set_rules('lastname', 'lang:lastname', 'trim|max_length[32]');
-		$this->form_validation->set_rules('email', 'lang:email', 'trim|required|valid_email|max_length[128]');
-		$this->form_validation->set_rules('username', 'lang:username', 'trim|required|max_length[128]|callback_check_username');
-		
-		if($this->auth->check_access('Admin')) : 
+		if($this->auth->check_access('Admin')) :
+			$this->form_validation->set_rules('firstname', 'lang:firstname', 'trim|max_length[32]');
+			$this->form_validation->set_rules('lastname', 'lang:lastname', 'trim|max_length[32]');
+			$this->form_validation->set_rules('email', 'lang:email', 'trim|required|valid_email|max_length[128]');
+			$this->form_validation->set_rules('username', 'lang:username', 'trim|required|max_length[128]|callback_check_username');				
 			$this->form_validation->set_rules('access', 'lang:access', 'trim|required');
 		endif;
 		
@@ -94,11 +93,11 @@ class Admin extends Admin_Controller
 		else
 		{
 			$save['id']		= $id;
-			$save['firstname']	= $this->input->post('firstname');
-			$save['lastname']	= $this->input->post('lastname');
-			$save['email']		= $this->input->post('email');
-			$save['username']	= $this->input->post('username');
 			if($this->auth->check_access('Admin')) :
+				$save['firstname']	= $this->input->post('firstname');
+				$save['lastname']	= $this->input->post('lastname');
+				$save['email']		= $this->input->post('email');
+				$save['username']	= $this->input->post('username');			
 				$save['access']		= $this->input->post('access');
 			endif;
 			
