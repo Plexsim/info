@@ -56,7 +56,7 @@ $lang['common_clients'] = 'Clients';
 $lang['common_slider'] = 'Slider (for slider themes)';
 $lang['common_email'] = 'Email (for Contact Us)';
 $lang['common_internal_form'] = 'Internal Forms';
-$lang['common_internal_form'] = 'Internal Forms';
+$lang['common_training_resources'] = 'Training Resources';
 
 
 

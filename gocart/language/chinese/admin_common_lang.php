@@ -55,7 +55,8 @@ $lang['common_portfolio'] = '小档案';
 $lang['common_clients'] = '顾客';
 $lang['common_slider'] = '幻灯片 (幻灯片主题)';
 $lang['common_email'] = '邮件（联系我们）';
-
+$lang['common_internal_form'] = 'Internal Forms';
+$lang['common_training_resources'] = 'Training Resources';
 
 $lang['enabled'] = 'Enabled';
 $lang['disabled'] = 'Disabled';
