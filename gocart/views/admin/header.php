@@ -93,7 +93,7 @@
           <header id="header" class="clearfix">
                <!-- Logo -->
                <a href="<?php echo base_url()?>" class="logo shadowed">
-                    Thundermatch Staff Site
+                    Thunder Match Training Site
                </a>
                                              
                <ul class="nav nav-pills pull-right shadowed" id="top-menu">
@@ -101,7 +101,7 @@
                			$admin_detail	= $this->session->userdata('admin');
                		?>
                	   <li><a href="#">Hi, <?php echo $admin_detail['firstname']?></a></li>
-                   <li><a href="<?php echo base_url();?>">Home</a></li>                                      
+                   <li><a href="<?php echo base_url();?>">Home</a></li>
                    <li><a href="<?php echo $admin_url;?>admin"><?php echo lang('common_administrators') ?></a></li>                    
                	   <li><a href="<?php echo site_url($this->config->item('admin_folder').'/login/logout');?>"><?php echo lang('common_log_out') ?></a></li>                       
                </ul> 
@@ -115,7 +115,7 @@
                          <!-- Main Menu -->
                          <ul class="side-menu shadowed">
                               <li>
-                                  <a class="active" href="<?php echo $admin_url;?>files"><i class="icon-home"></i><?php echo lang('common_file')?></a>
+                                  <a class="active" href="<?php echo $admin_url;?>files"><i class="icon-home"></i><?php echo lang('common_internal_form')?></a>
                               </li>                              
                          </ul>
                     </div>
