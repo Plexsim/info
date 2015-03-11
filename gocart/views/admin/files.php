@@ -24,7 +24,7 @@ function areyousure()
                                     <th><?php echo lang('action');?></th>                                    
                                 </tr>
                             </thead>
-                            <?php echo (count($files) < 1)?'<tr><td style="text-align:center;" colspan="3">'.lang('no_file_or_links').'</td></tr>':''?>
+                            <?php echo (count($files) < 1)?'<tbody><tr><td style="text-align:center;" colspan="3">'.lang('no_file_or_links').'</td></tr></tbody>':''?>
                             <?php if($files):?>
                             <tbody>
                             <?php
@@ -58,9 +58,9 @@ function areyousure()
 							}
 							?>                                   
                             </tbody>
-                            
+                            <?php endif;?>
                         </table>
                     </div>
                 </div>
-                <?php endif;?>
+               
               

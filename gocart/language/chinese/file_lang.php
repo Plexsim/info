@@ -49,3 +49,5 @@ $lang['message_saved_link']		= 'The link has been saved.';
 $lang['message_deleted_page']	= 'The page has been deleted.';
 $lang['message_deleted_link']	= 'The link has been deleted.';
 $lang['confirm_delete']			= 'Are you sure you want to delete this page/link?';
+$lang['message_saved_file']		= 'The file has been saved.';
+$lang['message_deleted_file']	= 'The file has been deleted.';
