@@ -13,7 +13,7 @@ function areyousure()
 						<a class="btn" href="<?php echo site_url($this->config->item('admin_folder').'/files/form'); ?>"><i class="icon-plus-sign"></i> <?php echo lang('add_new_file');?></a>	
 					</div>
 					<?php endif;?>
-                   <h3 class="block-title">Table with internal forms available for download</h3>
+                   <h3 class="block-title">Table with file available for download</h3>
                    
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped">

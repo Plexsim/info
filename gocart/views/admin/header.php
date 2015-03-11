@@ -115,7 +115,10 @@
                          <!-- Main Menu -->
                          <ul class="side-menu shadowed">
                               <li>
-                                  <a class="active" href="<?php echo $admin_url;?>files"><i class="icon-home"></i><?php echo lang('common_internal_form')?></a>
+                                  <a class="active" href="<?php echo $admin_url;?>files"><i class="icon-home"></i><?php echo lang('common_internal_form')?></a>                                  
+                              </li>
+                              <li>
+                              	  <a class="active" href="<?php echo $admin_url;?>training_resource"><i class="icon-home"></i><?php echo lang('common_training_resources')?></a>
                               </li>                              
                          </ul>
                     </div>

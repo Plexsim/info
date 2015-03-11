@@ -5,7 +5,7 @@ Admin latest gallery Language
 ******************************************/
 
 $lang['link_information']		= 'Link Information';
-$lang['add_new_file']		= 'Add New latest file';
+$lang['add_new_resource']		= 'Add New latest training resource';
 $lang['add_new_link']			= 'Add New Link';
 $lang['latest_galleries']		= 'Latest Galleries';
 $lang['news']					= 'News';
@@ -40,7 +40,7 @@ $lang['edit']  					= 'Edit';
 $lang['delete']  				= 'delete';
 $lang['save']  				= 'save';
 
-$lang['no_file_or_links']		= 'There are currently no latest file or links.';
+$lang['no_resource_or_links']		= 'There are currently no latest training resource or links.';
 $lang['error_page_not_found']			= 'The request page could not be found.';
 $lang['error_link_not_found']	= 'The request link could not be found.';
 $lang['message_saved_page']		= 'The page has been saved.';
@@ -48,5 +48,8 @@ $lang['message_saved_link']		= 'The link has been saved.';
 $lang['message_deleted_page']	= 'The page has been deleted.';
 $lang['message_deleted_link']	= 'The link has been deleted.';
 $lang['confirm_delete']			= 'Are you sure you want to delete this page/link?';
-$lang['message_saved_file']		= 'The file has been saved.';
-$lang['message_deleted_file']	= 'The file has been deleted.';
+$lang['message_saved_resource']	= 'The training resource has been saved.';
+$lang['message_deleted_resource']	= 'The training resource has been deleted.';
+
+
+
