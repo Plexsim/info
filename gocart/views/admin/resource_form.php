@@ -10,21 +10,7 @@
         <div class="btn-group pull-right">
 			<a class="btn" href="<?php echo site_url($this->config->item('admin_folder').'/training_resource'); ?>"><i class="icon-plus-sign"></i> Back to Training Resource Listing </a>	
 		</div>
-		
-               
-               <?php if (!empty($message)): ?>
-			        <div class="alert alert-success alert-dismissable fade in">
-			            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-			            <?php echo $message; ?>
-			        </div>
-			    <?php endif; ?>
-			
-			    <?php if (!empty($error)): ?>
-			        <div class="alert alert-danger alert-dismissable fade in">
-			            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-			            <?php echo $error; ?>
-			        </div>
-			    <?php endif; ?>
+
                
                <!-- Tab -->
                 <div class="c-block" id="tabs">

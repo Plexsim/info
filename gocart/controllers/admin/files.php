@@ -126,6 +126,10 @@ class Files extends Admin_Controller
 							unlink($file);
 						}
 					}
+				}else{
+					$data['error']	= $this->upload->display_errors();
+					$this->view(config_item('admin_folder').'/file_form', $data);
+					return; //end script here if there is an error
 				}
 			
 			}

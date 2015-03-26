@@ -96,7 +96,7 @@ class Training_Resource extends Admin_Controller
 		{
 			$this->load->helper('text');
 			
-			$uploaded	= $this->upload->do_upload('image');
+			$uploaded	= $this->upload->do_upload('image');					
 			
 			$save = array();
 			
@@ -115,7 +115,7 @@ class Training_Resource extends Admin_Controller
 			
 				//delete the original file if another is uploaded
 				if($uploaded)
-				{
+				{										
 					if($data['image'] != '')
 					{
 						$training_resource = 'uploads/'.$data['image'];
@@ -126,6 +126,10 @@ class Training_Resource extends Admin_Controller
 							unlink($training_resource);
 						}
 					}
+				}else{
+					$data['error']	= $this->upload->display_errors();
+					$this->view(config_item('admin_folder').'/resource_form', $data);
+					return; //end script here if there is an error
 				}
 			
 			}
@@ -138,10 +142,13 @@ class Training_Resource extends Admin_Controller
 					return; //end script here if there is an error
 				}
 			}
-				
+
+			
 			if($uploaded)
 			{
 				$image			= $this->upload->data();
+				
+				
 				$save['image']	= $image['file_name'];
 			}
 			
